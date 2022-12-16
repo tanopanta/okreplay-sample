@@ -1,13 +1,12 @@
 apply plugin: 'application'
 
-mainClassName = 'sample.OkreplaySample'
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation('com.squareup.okhttp3:okhttp:4.10.0')
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
     
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+    testImplementation 'com.airbnb.okreplay:okreplay:1.6.0'
 }
