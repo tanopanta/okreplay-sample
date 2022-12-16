@@ -46,6 +46,6 @@ public class OkreplaySampleTest {
         Response res = sut.Get();
         assertNotNull(res);
         assertTrue(res.isSuccessful());
-        assertEquals(res.code(), 200);
+        assertEquals(200, res.code());
     }
 }
